@@ -16,5 +16,12 @@ namespace Initiative_Tracker
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            FileIO io = new FileIO();
+
+            io.checkForFile();
+        }
     }
 }
